@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first
+        {
+            background-color: black;
+            width:100px;
+            height:100px;
+            position:absolute;
+            top:9px;
+            left:10px;
+        }
+        .sec{
+            background-color:blue;
+            width:100px;
+            height:100px;
+            position: absolute;
+            left:110px;
+            bottom:515px;
+        }
+        .third
+        {
+            background-color:black;
+            width:100px;
+            height:100px;
+            position:absolute;
+            left:213px;
+        }
+        .forth
+        {
+            background-color:blue;
+            width:100px;
+            height:100px;
+            position: absolute;
+            left:313px;
+            bottom:515px;
+        }
+        #square
+        {
+            
+           position: fixed;
+           
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class = "first"></div>
+    <div class = "sec"></div>
+    <div class = "third"></div>
+    <div class = "forth"></div>
+
+    <button id="square">Click!</button>
+   
+   
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+$("document").ready(()=>{
+    $("#square").click(()=>{
+        $(".sec").animate({left:"10px"})
+        $(".third, .forth").animate({left:"110px"})
+    });
+
+  
+
+});
+</script>
+
+    
+   
+
+</body>
+</html>
